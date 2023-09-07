@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="color: black; background-color: blue;">
+    <div class="center" style="background-color: chartreuse; width: 50px; height: 5vh; margin-left: 550px; margin-top: 250px; padding: 50px;  display: flex; justify-content: center; align-items: center;border-radius: 60px; border-style: dashed;" >
+        <div id="banner"><span style="font-weight: bolder; font-size: 15px;">Digital clock</span></div>
+        <div id="clock" style="font-size: 20px; background-color: tomato; border-radius: 15px;border-style: solid;"></div>
+    </div>
+    <script>
+const clock = document.getElementById('clock')
+
+setInterval(function () {
+    let date = new Date();
+    clock.innerHTML = date.toLocaleTimeString();
+},1000);
+    </script>
+</body>
+</html>
